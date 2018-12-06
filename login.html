@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>登录</title>
+<meta name="viewport" content="width=device-width" />
+<meta name='robots' content='noindex,follow' />
+<link rel="stylesheet" href="css/login.css" type="text/css" media="all" />
+<link rel='stylesheet' href='css/load-styles.css' type='text/css' media='all' />
+<script type="text/javascript" src="/js/common.js"></script>
+<style type="text/css">
+#radiobg img{position:fixed;top:0;left:0;z-index:-100;width:100%;height:auto;min-width:1024px;min-height:100%;}
+.STYLE2 {font-size: 14px}
+</style>
+<div id='radiobg'><img src='./images/login_bg.jpg' /></div>
+</head>
+<body class="login login-action-login wp-core-ui  locale-zh-cn">
+<div id="login">
+<div class="login-input">
+<center>
+	<img src="http://q2.qlogo.cn/headimg_dl?dst_uin=744876622&amp;spec=100" alt="" class="img-circle" weight="120" height="120">
+</center>
+<form name="f" method="post" action="./index.php?action=login">
+	<p>
+	<label for="user_login">用户名或电子邮件地址<br />
+	<input type="text" name="user" id="user" class="input" /></label>
+	</p>
+	<p>
+	<label for="user_pass">密码<br />
+	<input type="password" name="pw" id="pw"  class="input" /></label>
+	</p>
+	<?php echo $ckcode; ?>
+	<p class="submit">
+	<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="登录" />
+</form>
+
+</div>
+</body>
+</html>
